@@ -1,10 +1,10 @@
-#STL-CYLINDER-GENERATOR
+# STL-CYLINDER-GENERATOR
 for the course "Computergrafik" at HTWK-Leipzig  
-###build
+### build
 Use CLion IDE  
 __OR__  
 execute `cmake --build <workspace-path>/cylinder/cmake-build-debug --target cylinder -- -j 8`
-###run
+### run
 Use CLioin IDE  
 __OR__  
 execute `./<workspace-path>/cylinder/cmake-build-debug/cylinder`
