@@ -14,8 +14,22 @@ int main() {
     do {
         std::cout << "Enter the desired NUMBER OF SIDES of the cylinder when rendered (min 3)" << std::endl;
         std::cin >> resolution;
-    } while (resolution<3);
-
+    } while (resolution < 3);
+    if (resolution < 7) {
+        std::cout << "edgy!" << std::endl;
+    } else if (resolution < 20) {
+        std::cout << "here you go!" << std::endl;
+    } else if (resolution < 100) {
+        std::cout << "mmh, so smooth" << std::endl;
+    } else if (resolution < 5000) {
+        std::cout << "you must have an amazing printer!" << std::endl;
+    } else if (resolution < 50000) {
+        std::cout << "yea, I can still do that" << std::endl;
+    } else if (resolution < 500000) {
+        std::cout << "ok, give me a sec" << std::endl;
+    } else if (resolution >= 500000) {
+        std::cout << "are you trying to heat your room with a cpu?" << std::endl;
+    }
 
     Cylinder cylinder = Cylinder(height, radius);
     std::string renderedScene = cylinder.render(resolution);
