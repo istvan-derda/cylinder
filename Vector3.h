@@ -2,8 +2,8 @@
 // Created by istvan on 21.04.20.
 //
 
-#ifndef ZYLINDER_VECTOR3_H
-#define ZYLINDER_VECTOR3_H
+#ifndef CYLINDER_VECTOR3_H
+#define CYLINDER_VECTOR3_H
 
 
 class Vector3 {
@@ -19,4 +19,4 @@ public:
 
 
 
-#endif //ZYLINDER_VECTOR3_H
+#endif //CYLINDER_VECTOR3_H

@@ -6,6 +6,7 @@ int main() {
     double height;
     double radius;
     int resolution;
+    std::cout << "A command-line-program to render a cylinder to stl" << std::endl;
     std::cout << "Enter the HEIGHT of the cylinder" << std::endl;
     std::cin >> height;
     std::cout << "Enter the RADIUS of the cylinder" << std::endl;

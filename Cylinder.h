@@ -2,8 +2,8 @@
 // Created by istvan on 21.04.20.
 //
 
-#ifndef ZYLINDER_CYLINDER_H
-#define ZYLINDER_CYLINDER_H
+#ifndef CYLINDER_CYLINDER_H
+#define CYLINDER_CYLINDER_H
 
 #include "Vector3.h"
 
@@ -28,4 +28,4 @@ private:
 };
 
 
-#endif //ZYLINDER_CYLINDER_H
+#endif //CYLINDER_CYLINDER_H
