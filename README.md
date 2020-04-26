@@ -1,13 +1,21 @@
 # STL-CYLINDER-GENERATOR
-for the course "Computergrafik" at HTWK-Leipzig  
-### build
+
+for the course "Computergrafik" at HTWK-Leipzig 
+## Usage
+Rendered STL-file will be placed in the directory where the executable lies.  
+For viewing STL-file use https://www.viewstl.com/
+## build
+### all OS
 Use CLion IDE  
-__OR__  
-execute `cmake --build <workspace-path>/cylinder/cmake-build-debug --target cylinder -- -j 8`
-### run
+### Linux
+execute `cmake --build <workspace-path>/cylinder/cmake-build-debug --target cylinder -- -j 8`  
+cmake version 3.10.2
+## run
+### all OS
 Use CLioin IDE  
-__OR__  
+### Linux  
 execute `./<workspace-path>/cylinder/cmake-build-debug/cylinder`
+
   
     
     
