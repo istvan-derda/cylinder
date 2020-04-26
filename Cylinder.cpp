@@ -17,6 +17,7 @@ std::string Cylinder::render(int slices) {
     double zBack = (this->height / 2);
     Vector3 vCenterFront = Vector3(0, 0, zFront);
     Vector3 vCenterBack = Vector3(0, 0, zBack);
+
     for (int i = 0; i < slices; i++) {
         double alpha1 = (2 * M_PI * i) / slices;
         double x1 = std::cos(alpha1) * this->radius;
