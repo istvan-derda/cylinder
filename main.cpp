@@ -48,6 +48,8 @@ int main() {
     outfile << renderedScene;
     outfile.close();
 
+    printMessage("\n\nRendered cylinder to cylinder.stl next to the executable.");
+
     return 0;
 }
 
