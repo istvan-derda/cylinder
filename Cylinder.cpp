@@ -9,7 +9,8 @@
 #include "Vector3.cpp"
 
 std::string Cylinder::render(int slices) {
-    if (slices < 3) { throw "number of slices must be >2"; }
+    throwErrorIfInvalidSlices(slices);
+
     std::string render = "";
     render += "solid cylinder\n";
 
@@ -55,5 +56,10 @@ std::string Cylinder::renderFacet(Vector3 v1, Vector3 v2, Vector3 v3) {
     render += "endloop\n";
     render += "endfacet\n";
     return render;
+}
+
+void Cylinder::throwErrorIfInvalidSlices(int slices) {
+    if (slices < 3) { throw "number of slices must be >2"; }
+    return;
 }
 

@@ -65,23 +65,27 @@ void PrintCheekyCommentOnResolution(int resolution) {
 int getResolutionFromUserInput() {
     int resolution;
     do {
-        std::cout << "Enter the desired NUMBER OF SIDES of the cylinder when rendered (min 3)" << std::endl;
+        std::cout << "Enter the desired NUMBER OF SIDES of the cylinder when rendered (>= 3)" << std::endl;
         std::cin >> resolution;
     } while (resolution < 3);
     return resolution;
 }
 
 double getHeightFromUserInput() {
-    double height;
-    std::cout << "Enter the HEIGHT of the cylinder" << std::endl;
-    std::cin >> height;
+    double height = 0;
+    do {
+        std::cout << "Enter the HEIGHT of the cylinder (>0)" << std::endl;
+        std::cin >> height;
+    } while (!(height > 0));
     return height;
 }
 
 double getRadiusFromUserInput() {
     double radius;
-    std::cout << "Enter the RADIUS of the cylinder" << std::endl;
-    std::cin >> radius;
+    do {
+        std::cout << "Enter the RADIUS of the cylinder (>0)" << std::endl;
+        std::cin >> radius;
+    } while (!(radius>0));
     return radius;
 }
 
